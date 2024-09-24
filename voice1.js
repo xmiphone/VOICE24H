@@ -54,8 +54,8 @@ const {client,exit,joinVoiceChannel,fs,server_id} = require("./system");
                   channelId: channel_id,
                   guildId: server_id,
                   adapterCreator: chat.guild.voiceAdapterCreator,
-                  selfMute: false,
-                  selfDeaf: false,
+                  selfMute: true,
+                  selfDeaf: true,
                 });
             } catch(error){
                 // Log the error if it occurs
